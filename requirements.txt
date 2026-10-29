@@ -1,0 +1,9 @@
+opencv-python
+numpy
+pytesseract
+matplotlib
+scikit-learn
+networkx
+easyocr
+torch
+torchvision

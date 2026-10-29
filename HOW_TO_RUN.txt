@@ -1,0 +1,23 @@
+pip install -r requirements.txt
+OR
+pip install opencv-python numpy pytesseract matplotlib scikit-learn networkx easyocr torch torchvision
+
+and install this executable: 
+https://github.com/UB-Mannheim/tesseract/releases/download/v5.4.0.20240606/tesseract-ocr-w64-setup-5.4.0.20240606.exe
+
+
+
+Usage:
+
+
+python handwritten_scanner_ocr.py input.png
+-Scans the image, enhances the handwriting, and extracts text using OCR.
+
+python handwritten_scanner_ocr.py input.png --engine auto
+-Automatically selects the available OCR engine to recognize handwriting.
+
+python handwritten_scanner_ocr.py input.png --remove-lines --debug
+-Removes notebook lines and saves intermediate images for debugging.
+
+python handwritten_scanner_ocr.py input.png --summarize --num-sentences 3
+-Extracts handwritten text and generates a summary containing 3 sentences.
